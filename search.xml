@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>vscode wsl coplilot 连接不上代理解决方法</title>
+      <link href="/2026/02/13/vscode-wsl-coplilot-%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+      <url>/2026/02/13/vscode-wsl-coplilot-%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vscode-wsl-coplilot-连接不上代理解决方法"><a href="#vscode-wsl-coplilot-连接不上代理解决方法" class="headerlink" title="vscode wsl coplilot 连接不上代理解决方法"></a>vscode wsl coplilot 连接不上代理解决方法</h1><p>在 user 的 setting.json 里添加</p><figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">"remote.extensionKind"</span><span class="punctuation">:</span> <span class="punctuation">{</span></span><br><span class="line">    <span class="attr">"GitHub.copilot"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">"ui"</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"GitHub.copilot-chat"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">"ui"</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">}</span><span class="punctuation">,</span></span><br></pre></td></tr></tbody></table></figure><p>覆盖扩展的类型。”ui” 扩展在本地计算机上安装和运行，而 “workspace” 扩展则在远程计算机上运行。通过使用此设置重写扩展的默认类型，可指定是否应在本地或远程安装和启用该扩展。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vim-adventures</title>
       <link href="/2026/01/31/vim-adventures/"/>
       <url>/2026/01/31/vim-adventures/</url>
